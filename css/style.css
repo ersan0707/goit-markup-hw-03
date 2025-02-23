@@ -20,33 +20,30 @@ body {
 /* Başlık bölümü */
 .header-menu {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    width: 100%;
-    height: 72px;
-    padding: 0 24px;
-    border-bottom: 1px solid #e7e9fc;
-    background-color: #FFFFFF;
-    text-decoration: none;
+    
 }
 
-/* Menü Listesi */
-.nav-ul {
-    display: flex;
-    gap: 24px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
 
 /* Menü Linkleri */
-.nav-a {
-    color: #4D5AE5;
-    font-weight: bold;
-    font-family: 'Raleway', sans-serif;
-    text-decoration: none;
-    font-size: 16px;
+.header-nav .logo {    
+    margin-right: 76px;
 }
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: #4D5AE5;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+span-header {
+    color: #2E2F42;
+}
+
 
 .nav-a:hover {
     color: #404BBF;
@@ -55,22 +52,43 @@ body {
 /* Header Navigation */
 .header-nav {
     display: flex;
-    align-items: center;
-    gap: 24px;
+    gap: 40px;
+    list-style: none;  
 }
 
 /* Adres Bölümü */
-.nav-adres ul {
+.header-nav-list {
     display: flex;
     justify-content: flex-end;
-    gap: 20px;
+    gap: 40px;
     list-style: none;
 }
 
-.nav-adres ul li {
-    color: #2E2F42;
+.header-nav-list-item {
+    padding: 24px 0;
+    color: #434455;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+.nav-adres {
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.adres-ul {
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+}
+.adres-li {
+    display: flex;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+}
+.adres-a {
+    color: #434455;
     text-decoration: none;
 }
 .container{
@@ -165,8 +183,8 @@ body {
 
 /* Our Team Bölümü Css kuralları */
 
-.section-team {
-    background-color: #F4F4FD;
+.section-team {   
+    padding: 120px 0;
 }
 
 .team-ul{
@@ -183,11 +201,22 @@ body {
     text-align: center;
 }
 
-.team-p{
+.team-li-text {
     padding: 32px 0;
+}
+.team-p{
+    text-align: center;
+}
+header-three{
+  
+    text-align: center;
+    margin-bottom: 8px;
 }
 
 /* Portfolio Bölümü CSS Kuralları */
+.section-portfolio {
+    padding: 120px 0;
+}
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
@@ -201,14 +230,15 @@ body {
     flex: 1;
     background-color: #FFFFFF;
     flex-basis:calc((100%-72px)/4);
-    
+
 }
 
 .portfolio-list-item-text{
-    padding: 32px 16px;
-    border: 1px solid #E7E9FC;
-    border-top: none;
     margin-bottom: 8px;
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    
 }
 
 /* section-portfolio finish */
@@ -232,7 +262,7 @@ body {
     padding: 100px 0;
 }
 
-.footer .logo{
+.nav-a .nav-span{
     display: inline-block;
     margin-bottom: 16px;
 }

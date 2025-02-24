@@ -34,7 +34,7 @@ h2{
     font-size: 36px;
 }
 h3{
-    font-weight: medium;
+    
     font-size:20px;
 }
 a{
@@ -49,99 +49,106 @@ ol, ul  {
     padding-top: 120px;
     padding-bottom: 120px;
 }
-.container{
-    
-    width: 1158px;
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: #4D5AE5;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.container{ 
     margin: 0 auto;
     padding: 0 15px;
+    width: 1158px;
 }
 
 /* Header bölümü */
 
-.header-menu {
-    border-bottom: 1px solid #e7e9fc;
-    
-}
-.header-container {
-    display: flex;
-    padding: 0 15px;
-}
-/* Header Navigation */
-.header-nav {
-    display: flex;
-    align-items: center;  
+header{
+    border-bottom: 1px solid #E7E9FC;
 }
 
-/* Menü Linkleri */
-.header-nav .logo {    
+.header-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-nav{
+    display: flex;
+    align-items: center;
+}
+
+.header-nav .logo{
     margin-right: 76px;
 }
-.logo {
-    font-family: "Raleway",sans-serif;
-    font-size:18px;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #4d5ae5;
-    margin-right: 76px;
-}
-span-header {
-    color: #2e2f42;
-}
 
-
-
-
-
-/* Adres Bölümü */
-.header-nav-list {
-    display: flex;
-    gap: 40px;;
-}
-.header-nav-list-item {
-    padding: 24px 0;
-    
-}
-.nav-list{
-    display: block;
-    text-decoration: none;
-    color: #2e2f42;
-    font-size:16px;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    padding: 24px 0;
-}
-.nav-list:hover, .nav-list:focus {
-    color: #404BBF;
-}
-
-.nav-adres {
-    font-style: normal;
-    
-}
-.adres-ul {
+.header-nav-list{
     display: flex;
     gap: 40px;
 }
 
-.adres-a {
-    
-    font-size: 16px;
-    letter-spacing: 0,02em;
-    color: #434455;
-    
-}
-.adres-a:hover, .adres-a:focus {
-    color: #404BBF;
-}   
-header-nav-list:active{
-    text-decoration: underline;
-    text-decoration-color: #404BBF;
-    color:#404BBF;
+.header-nav-list-item{
+    padding: 24px 0;
 }
 
+.span-header {
+    color: #2E2F42;
+}
+
+header nav ul li {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+header ul{
+    list-style-type: none;
+}
+
+.menu-list-nav {
+    color: #2E2F42;
+    text-decoration: none;
+    padding: 24px 0;
+}
+
+a.menu-list-nav:hover {
+    color: #404BBF;
+}
+
+a.menu-list-nav:focus {
+    color: #404BBF;
+}
+
+.header-add {
+    font-style: normal;
+    display: flex;
+    align-items:center;
+    margin-left: auto;
+}
+
+.header-add-list{
+    display: flex;
+    gap: 40px;
+}
+
+.menu-list-add {
+    text-decoration: none;
+    color: #434455;
+}
+
+a.menu-list-add:hover {
+    color: #404BBF;
+}
+
+a.menu-list-add:focus {
+    color: #404BBF;
+}
 /* Effective Solutions ve Buton Bölümü */
 
 .one-sect {
@@ -225,9 +232,9 @@ header-nav-list:active{
     text-align: left;
 }
 header-three{
-  
-    text-align: center;
     margin-bottom: 8px;
+    text-align: center;
+    
 }
 /* Our Team Bölümü Css kuralları */
 
@@ -257,9 +264,9 @@ header-three{
     text-align: center;
 }
 header-three{
-  
-    text-align: center;
     margin-bottom: 8px;
+    text-align: center;
+    
 }
 
 /* Portfolio Bölümü CSS Kuralları */
@@ -283,10 +290,11 @@ header-three{
 }
 
 .portfolio-list-item-text{
-    margin-bottom: 8px;
+    
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top:none;
+    margin-bottom: 8px;
     text-align: center;
     
 }
